@@ -1,7 +1,5 @@
 project: ustr
 target: fuzz-serialize
 
-image: ghcr.io/nottirb/ustr:latest
-
 cmds:
     - cmd: /fuzz_serialize
