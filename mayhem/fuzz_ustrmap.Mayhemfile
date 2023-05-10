@@ -1,0 +1,7 @@
+project: ustr
+target: fuzz-ustrmap
+
+image: ghcr.io/nottirb/ustr:latest
+
+cmds:
+    - cmd: /fuzz_ustrmap

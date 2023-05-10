@@ -1,0 +1,7 @@
+project: ustr
+target: fuzz-copy
+
+image: ghcr.io/nottirb/ustr:latest
+
+cmds:
+    - cmd: /fuzz_copy
