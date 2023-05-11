@@ -1,0 +1,30 @@
+[package]
+name = "fuzz_ustr"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+honggfuzz = "0.5.55"
+serde_json = "1.0.96"
+
+[dependencies.ustr]
+path = ".."
+features = ["serialization"]
+
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "fuzz_copy"
+path = "fuzz_targets/fuzz_copy.rs"
+
+[[bin]]
+name = "fuzz_serialize"
+path = "fuzz_targets/fuzz_serialize.rs"
+
+[[bin]]
+name = "fuzz_ustrmap"
+path = "fuzz_targets/fuzz_ustrmap.rs"

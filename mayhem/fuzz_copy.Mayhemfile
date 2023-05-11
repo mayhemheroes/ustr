@@ -1,0 +1,5 @@
+project: ustr
+target: fuzz-copy
+
+cmds:
+    - cmd: /fuzz_copy

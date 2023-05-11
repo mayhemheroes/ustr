@@ -1,0 +1,5 @@
+project: ustr
+target: fuzz-ustrmap
+
+cmds:
+    - cmd: /fuzz_ustrmap

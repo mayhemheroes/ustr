@@ -1,0 +1,5 @@
+project: ustr
+target: fuzz-serialize
+
+cmds:
+    - cmd: /fuzz_serialize
